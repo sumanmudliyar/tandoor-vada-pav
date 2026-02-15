@@ -1,0 +1,193 @@
+/* ---------------- BODY ---------------- */
+
+
+/* Container */
+
+.container {
+  max-width: 480px;
+  margin: auto;
+  padding: 16px;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.header {
+  text-align: center;
+  padding: 24px 16px;
+  margin-bottom: 24px;
+  border-radius: 22px;
+
+  background: linear-gradient(
+    135deg,
+    #1b1b25,
+    #12121a
+  );
+
+  border: 1px solid
+    rgba(139, 92, 246, 0.4);
+
+  box-shadow: 0 0 20px
+    rgba(139, 92, 246, 0.35);
+
+  backdrop-filter: blur(10px);
+}
+
+.header h1 {
+  font-family: "Ysabeau Infant", sans-serif;
+  color: #a78bfa;
+  letter-spacing: 3px;
+  margin: 0;
+  font-size: 28px;
+
+  text-shadow: 0 0 10px
+    rgba(139, 92, 246, 0.8);
+}
+
+.header p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #d1d5db;
+}
+
+/* ---------------- SECTION ---------------- */
+
+.section {
+  margin-bottom: 22px;
+  padding: 16px;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    145deg,
+    #1b1b25,
+    #11111a
+  );
+
+  border: 1px solid
+    rgba(139, 92, 246, 0.25);
+
+  box-shadow:
+    0 0 16px rgba(139, 92, 246, 0.25),
+    inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Section Title */
+
+.section h2 {
+  margin: 0 0 14px;
+
+  font-family: "Bangers", cursive;
+  color: #c4b5fd;
+  letter-spacing: 2px;
+  font-size: 20px;
+
+  text-shadow: 0 0 8px
+    rgba(139, 92, 246, 0.7);
+}
+
+/* ---------------- ITEM ROW ---------------- */
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 0;
+
+  border-bottom: 1px dashed
+    rgba(255, 255, 255, 0.15);
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+/* Tap effect */
+
+.item-row:active {
+  transform: scale(0.97);
+  opacity: 0.85;
+}
+
+.item-row:last-child {
+  border-bottom: none;
+}
+
+/* ---------------- PRICE BADGE ---------------- */
+
+.price {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+
+  padding: 5px 12px;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #6366f1
+  );
+
+  box-shadow: 0 0 10px
+    rgba(139, 92, 246, 0.8);
+}
+
+/* ---------------- SCROLL ---------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.item-name {
+  font-family: "Ysabeau Infant", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+
+  /* Gradient colors */
+  background: linear-gradient(
+    90deg,
+    #a78bfa,
+    #8b5cf6,
+    #6366f1,
+    #a78bfa
+  );
+
+  background-size: 300%;
+
+  /* Clip gradient to text */
+  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Hide original text color */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+
+  /* Animation */
+  animation: gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
+
+
+/* Description text */
+
+.description {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #cbd5e1;
+
+  opacity: 0.85;
+}

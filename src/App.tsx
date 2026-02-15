@@ -1,37 +1,22 @@
-import { menuData } from "./data/menuData";
+
+
+import Auraa from "./client/Auraa/Auraa";
+import GrillFactory from "./client/GrillFactory/GrillFactory";
+import TandoorVadapav from "./client/TandoorVadapav/TandoorVadapav";
 import "./index.css";
 
 function App() {
   return (
     <div className="container">
-      {/* Header */}
-      <header className="header">
-        <h1>The Tandoor Vadapav</h1>
-        <p>Available on Swiggy & Zomato</p>
-        <span>📞 90222717467</span>
-      </header>
+      {/* <GrillFactory/> */}
 
-      {/* Sections */}
-      {menuData.map((section) => (
-        <div
-          key={section.title}
-          className="section"
-        >
-          <h2>{section.title}</h2>
+      {/* <TandoorVadapav/> */}
 
-          {section.items.map((item) => (
-            <div
-              key={item.name}
-              className="item-row"
-            >
-              <span>{item.name}</span>
-              <span className="price">
-                ₹{item.price}
-              </span>
-            </div>
-          ))}
-        </div>
-      ))}
+      <Auraa/>
+    
+      
+
+     
     </div>
   );
 }
